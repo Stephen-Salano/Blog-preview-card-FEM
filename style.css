@@ -58,4 +58,104 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border: 1px solid var(--black-color);
+    border-radius: 15px ;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,1), 10px 10px 5px 0px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+
+#img img{
+    max-width: 100%;
+    min-width: 0px;
+    height: auto;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#category{
+    /* centering the text in the yellow category div */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-color);
+    border-radius: 5px;
+    max-width: 5rem;
+    max-height: 1.8125rem;
+    padding: 4px 12px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: 2rem;
+}
+#content{
+    max-width: 21rem;
+}
+
+#category p{
+    font-family: "Figtree";
+    font-weight: 800;
+    font-size: var(--fs-preset-3-bold);
+    line-height: var(--lh-preset-3-bold);
+    letter-spacing: var(--ls-preset-3-bold);
+    color: var(--black-color);
+}
+#date p{
+    font-family: "Figtree";
+    font-weight: 500;
+    font-size: var(--fs-preset-3-regular);
+    line-height: var(--lh-preset-3-regular);
+    letter-spacing: var(--ls-preset-3-regular);
+    color: var(--black-color);
+}
+#title p{
+    font-family: "Figtree";
+    font-weight: 800;
+    font-size: var(--fs-preset-1);
+    line-height: var(--lh-preset-1);
+    letter-spacing: var(--ls-preset-1);
+    color: var(--black-color);
+}
+#description p {
+    font-family: "Figtree";
+    font-weight: 500;
+    font-size: var(--fs-preset-2);
+    line-height: var(--lh-preset-2);
+    letter-spacing: var(--ls-preset-2);
+    color: var(--grey-color);
+}
+#tutor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-200);
+}
+#tutor #name p{
+    font-family: "Figtree";
+    font-weight: 800;
+    font-size: var(--fs-preset-3-bold);
+    line-height: var(--lh-preset-3-bold);
+    letter-spacing: var(--ls-preset-3-bold);
+    color: var(--black-color);
+}
+#tutor #image-circle img{
+    height: auto;
+    max-width: 2rem;
+}
+
+/*mobile screen width*/
+@media(max-width: 375px){
+    #container{
+        max-width:20rem;
+        height: auto;
+    }
+   
+}
+/*Desktop screen width*/
+@media(max-width: 1440px){
+    #container{
+        max-width: 24rem;
+        height: auto;
+    }
 }
