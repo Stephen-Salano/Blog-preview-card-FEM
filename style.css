@@ -43,6 +43,7 @@
     --space-50: 4px;
     
 }
+
 /* styling defualt body*/
 body{
     background-color: var(--yellow-color);
@@ -51,6 +52,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 0;
+    min-height: 100vh
 }
 #container{
     background-color: var(--white-color);
@@ -59,8 +61,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    flex-shrink: 1;
-    flex-grow: 1;
+    /* flex-shrink: 1;
+    flex-grow: 1; */
     border: 1px solid var(--black-color);
     border-radius: 15px ;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,1), 10px 10px 5px 0px rgba(0,0,0,0.5);
