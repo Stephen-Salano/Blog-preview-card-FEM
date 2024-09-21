@@ -73,7 +73,7 @@ body{
 #img img{
     max-width: 100%;
     min-width: 0px;
-    height: auto;
+    height: 12.5rem;
     border-radius: 5px;
     flex-grow: 1;
     flex-shrink: 1;
