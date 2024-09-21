@@ -1,0 +1,61 @@
+/* import font */
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-weight: 500 800; /* range from 500 to 800*/
+}
+
+/* custom variables*/
+:root{
+    /* primary colors*/
+    --yellow-color: #F4D04E;
+    --black-color: #111;
+    --grey-color: #686b6b;
+    --white-color: #fff;
+
+    /*Font families*/
+    --ff-figtree-bold: "Figtree", sans-serif;
+
+    /*Text Preset 1*/
+    --fs-preset-1: 24px;
+    --lh-preset-1: 150%;
+    --ls-preset-1: 0px;
+
+    /* Text Preset 2 */
+    --fs-preset-2: 16px;
+    --lh-preset-2: 150%;
+    --ls-preset-2: 0px;
+
+    /* Text Preset 3 (Regular) */
+    --fs-preset-3-regular: 14px;
+    --lh-preset-3-regular: 150%;
+    --ls-preset-3-regular: 0px;
+
+    /* Text Preset 3 (Bold) */
+    --fs-preset-3-bold: 14px;
+    --lh-preset-3-bold: 150%;
+    --ls-preset-3-bold: 0px;
+
+    /* Spacing*/
+    --space-200: 16px;
+    --space-150: 12px;
+    --space-100: 8px;
+    --space-50: 4px;
+    
+}
+/* styling defualt body*/
+body{
+    background-color: var(--yellow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#container{
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
